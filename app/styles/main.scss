@@ -7,6 +7,7 @@ $bg : #222222;
 $borderColor : rgba(255,255,255, .25);
 
 $break-small: 320px;
+$break-medium: 420px;
 $break-large: 1200px;
 
 $bgimage : "../images/black_lozenge.png";
@@ -47,9 +48,61 @@ td{
 
 }
 
+.accordion{
+	/* Initially we don't want any height, and we want the contents to be hidden */
+	max-height: 0;
+	overflow: hidden;
+
+	/* Set our transitions up. */
+	-webkit-transition: max-height 0.8s;
+	-moz-transition: max-height 0.8s;
+	transition: max-height 0.8s;
+}
+
+#aboutAccordion, #projectsAccordion, #galleryAccordion, #steamAccordion, #musicAccordion{
+	max-height: 900px;
+}
+
+.container{
+	border-radius: 3px;
+	padding: 10px;
+	border-top: 2px solid #999999;
+	border-bottom: 2px solid #222222;
+}
+
+.title{
+	padding-top: 10px;
+	font-size: 42px;
+	font-weight: bold;
+	color: #e3e3e3;
+}
+.header{
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+
+.freelanceTable{
+	width: 300px;
+
+  @media screen and (min-width: 600px) {
+    width: 500px;
+  };
+
+  @media screen and (min-width: 900px) {
+    width: 600px;
+  };
+
+
+}
+/*
+  td, tr{
+  	border : 1px solid red;
+  }
+  */
 .freelanceRow{
 	width: 100%;
 	text-align: center;
+	transition: .3s all;
 }
 
 .freelanceRow:hover{
@@ -57,9 +110,28 @@ td{
 }
 
 .steamIcon{
-	width: 250px;
-	border-radius: 10px;
-	border: 2px solid black;
+	margin: 0 auto;
+	padding: 5px;
+	width: 115px;
+	border-radius: 5px;
+  @media screen and (min-width: 600px) {
+    width: 200px;
+    padding: 10px;
+  };
+  transition: .3s all;
+}
+
+.steamIcon:hover{
+	background-color: rgba(255,255,255,.1);
+}
+
+.steamPic{
+	border-radius: 5px;
+	width: 100%;
+}
+
+.steamIcon:hover{
+
 }
 
 .rowLink{
@@ -74,36 +146,56 @@ td{
 .centerColumn{
 	margin: 0 auto;
 	width: 320px;
-
+  @media screen and (min-width: 400px) {
+    width: 400px;
+  };
 
   @media screen and (min-width: 600px) {
     width: 600px;
-  }
+  };
   
+  @media screen and (min-width: 900px) {
+    width: 800px;
+  };
 }
 
 
 
 .galleria{ 
-	width: 100%; height: 200px;
-	@media screen and (min-width: 600px) {
-		height: 400px;
-	}
+	width: 320px;
+	height: 240px;
+
+  @media screen and (min-width: 400px) {
+    width: 400px;
+    height: 280px;
+  };
+
+  @media screen and (min-width: 600px) {
+	height: 400px;
+	width: 600px;
+  };
+  
+  @media screen and (min-width: 900px) {
+	width: 800px;
+	height: 550px;
+  };
+
 }
 
 .icon{
 	width : 30px;
 	float : left;
 	margin-right: 10px;
+	border-radius: 4px;
+	transition: .3s all;
 }
+.icon:hover{
+	background-color: rgba(255,255,255,.5);
+}
+
 
 .bigIcon{
 	width : 60px;
-}
-
-.title{
-	margin-top: 2px;
-	float:left;
 }
 
 .player{
@@ -112,13 +204,6 @@ td{
 	//border-top: 2px solid #444444;
 }
 
-.header{
-	padding-top: 10px;
-	font-size: 42px;
-	font-weight: bold;
-	color: #e3e3e3;
-
-}
 
 .info{
 	margin : 0 auto;
@@ -130,15 +215,6 @@ td{
 	margin-bottom: 7px;
 }
 
-.container{
-
-	border-radius: 3px;
-	padding: 10px;
-	border-top: 2px solid #999999;
-	border-bottom: 2px solid #222222;
-	margin-bottom: 10px;
-	margin-top: 10px;
-}
 
 .light {
 		box-shadow:
@@ -150,6 +226,18 @@ td{
 		box-shadow:
 		inset 0px 10px 10px -10px rgba(255,255,255,.6);
 	background-image: url($greyImage);
+}
+
+
+.steamContainer{
+	border-radius: 3px;
+	background-image: url($darkImage);
+	padding: 5px;
+	color: rgb(155,155,155);
+	font-size: 20px;
+	text-align: center;
+		box-shadow:
+		inset 0px 10px 10px -10px rgba(0,0,0,1);
 }
 
 .darkContainer{

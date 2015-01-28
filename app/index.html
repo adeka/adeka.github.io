@@ -12,33 +12,29 @@
         <!-- endbower -->
         <!-- endbuild -->
         <!-- build:css(.tmp) styles/main.css -->
-        <link href='http://fonts.googleapis.com/css?family=Julius+Sans+One' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="styles/main.css">
         <!-- endbuild -->
     </head>
     <body>
+        <link href='http://fonts.googleapis.com/css?family=Julius+Sans+One' rel='stylesheet' type='text/css'>
+    
     <div class="centerColumn">
         <!--[if lt IE 10]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
     <div class="center" id="about">
-        <div class="header">Nikita Filatov</div>
+        <div class="title">Nikita Filatov</div>
     </div>
-
-<!--
-
-
-
-
-
--->
-    <div class="center">
-        <div class="container grey">
-            <img class="icon" src="/images/icons/address book.png">
+    <div class="center" id="aboutme">
+        <div class="header container grey">
+            <img class="icon" src="images/icons/address book.png">
             About Me
+            <!--
+            <img class="collapseIcon" src="images/icons/arrow up.png">
+            -->
         </div>
      </div>
-
+<div id="aboutAccordion" class="accordion" data-open=true>
     <div class="content container light">
         <table>
             <tr class="rowLink" id="resume">
@@ -46,7 +42,7 @@
                     Download my resume
                 </td>
                 <td>
-                    <img class="bigIcon" src="/images/icons/doc.png">
+                    <img class="bigIcon" src="images/icons/doc.png">
                 </td>
             </tr>
             <tr class="rowLink" id="linkedin">
@@ -54,7 +50,7 @@
                     Visit my LinkedIn
                 </td>
                 <td>
-                    <img class="bigIcon" src="/images/icons/linkedin.png">
+                    <img class="bigIcon" src="images/icons/linkedin.png">
                 </td>
             </tr>
             <tr class="rowLink" id="github">
@@ -62,20 +58,20 @@
                     Visit my github page
                 </td>
                 <td>
-                    <img class="bigIcon" src="/images/icons/github.png">
+                    <img class="bigIcon" src="images/icons/github.png">
                 </td>
             </tr>
         </table>
     </div>
+</div>
 
-
-    <div class="center">
-        <div class="container grey">
-            <img class="icon" src="/images/icons/command.png">
+    <div class="center" id="projects">
+        <div class="header container grey">
+            <img class="icon" src="images/icons/command.png">
             Projects
         </div>
      </div>
-
+<div id="projectsAccordion" class="accordion" data-open=true>
     <div class="content container light">
         <table>
             <tr class="rowLink" id="rogue">
@@ -86,7 +82,7 @@
                     </p>
                 </td>
                 <td>
-                    <img class="bigIcon" src="/images/icons/layout 2.png">
+                    <img class="bigIcon" src="images/icons/layout 2.png">
                 </td>
             </tr>
             <tr class="rowLink" id="mdv">
@@ -97,7 +93,7 @@
                     </p>
                 </td>
                 <td>
-                    <img class="bigIcon" src="/images/icons/layout 4.png">
+                    <img class="bigIcon" src="images/icons/layout 4.png">
                 </td>
             </tr>
             <tr class="rowLink" id="lexicon">
@@ -108,7 +104,7 @@
                     </p>
                 </td>
                 <td>
-                    <img class="bigIcon" src="/images/icons/mouse.png">
+                    <img class="bigIcon" src="images/icons/mouse.png">
                 </td>
             </tr>
             <tr class="rowLink" id="ai">
@@ -119,7 +115,7 @@
                     </p>
                 </td>
                 <td>
-                    <img class="bigIcon" src="/images/icons/share.png">
+                    <img class="bigIcon" src="images/icons/share.png">
                 </td>
             </tr>
             <tr class="rowLink" id="mrss">
@@ -130,7 +126,7 @@
                     </p>
                 </td>
                 <td>
-                    <img class="bigIcon" src="/images/icons/rss.png">
+                    <img class="bigIcon" src="images/icons/rss.png">
                 </td>
             </tr>
             <tr class="rowLink" id="newsagg">
@@ -141,7 +137,7 @@
                     </p>
                 </td>
                 <td>
-                    <img class="bigIcon" src="/images/icons/signal.png">
+                    <img class="bigIcon" src="images/icons/signal.png">
                 </td>
             </tr>
             <tr class="rowLink" id="squadhero">
@@ -152,19 +148,19 @@
                     </p>
                 </td>
                 <td>
-                    <img class="bigIcon" src="/images/icons/star.png">
+                    <img class="bigIcon" src="images/icons/star.png">
                 </td>
             </tr>
         </table>
     </div>
-
-     <div class="center">
-        <div class="container grey">
-            <img class="icon" src="/images/icons/pic 3.png">
+</div>
+     <div class="center" id="art">
+        <div class="header container grey">
+            <img class="icon" src="images/icons/pic 3.png">
             Artwork , Photos and Photoshop
         </div>
      </div>
-
+<div id="galleryAccordion" class="accordion" data-open=true>
      <div class="darkContainer">
         <div class="info">The galley below has several images I have created over the years, some digital, done with photoshop or illustrator, and some traditional drawings, painting and photographs</div>
     </div>
@@ -182,65 +178,102 @@
         <img src="images/wings.jpg" data-description="Another photoshop illustration with angel wings" data-title="Wings">
         <img src="images/zipper.jpg" data-description="More Photoshop work" data-title="Zipper">
     </div>
+</div>
 
 
-
-     <div class="center">
-        <div class="container grey">
-            <img class="icon" src="/images/icons/users.png">
+     <div class="center" id="freelancing">
+        <div class="header container grey">
+            <img class="icon" src="images/icons/users.png">
             Freelancing
         </div>
      </div>
 
-
-    <div class="content container light">
-        <table>
+<div id="steamAccordion" class="accordion" data-open=true>
+ <div class="content container light">
+    <table class="freelanceTable">
             <tr class="freelanceRow" id="steam">
                 <td>
                     Check out my steam workshop profile
                 </td>
                 <td>
-                    <img class="bigIcon" src="/images/icons/steam.png">
-                </td>
-            </tr>
-             <tr>
-                <td>
-                    <img class="steamIcon" id="tiny" src="/images/tiny.jpg">
-                </td>
-                <td>
-                    <img class="steamIcon" id="hud" src="/images/dota.jpg">
-                </td>
-            </tr>
-            </table>
-
-            <table>
-            <tr class="freelanceRow" id="turbosquid">
-                <td>
-                    See my Turbosquid artist profile
-                </td>
-                <td>
-                    <img class="bigIcon" src="/images/icons/turbosquid.png">
-                </td>
-            </tr>
-             <tr>
-                <td>
-                    <img class="steamIcon" id="colt" src="/images/colt.jpg">
-                </td>
-                <td>
-                    <img class="steamIcon" id="m4a1" src="/images/m4a1.jpg">
+                    <img class="bigIcon" src="images/icons/steam.png">
                 </td>
             </tr>
         </table>
     </div>
+    <div class="steamContainer">
+        <table class="freelanceTable">
+         <tr>
+            <td>
+                <div class="steamIcon">
+                    <img class="steamPic" id="tiny" src="images/tiny.jpg">
+                </div>
+            </td>
+            <td>
+                <div class="steamIcon">
+                    <img class="steamPic" id="hud" src="images/dota.jpg">
+                </div>
+            </td>
+        </tr>
+
+         <tr>
+            <td>
+                Glacial Tiny
+            </td>
+            <td>
+                Flagstone HUD
+            </td>
+        </tr>
+
+    </table>
+</div>
+<div class="content container light">
+    <table class="freelanceTable">
+        <tr class="freelanceRow" id="turbosquid">
+            <td>
+                See my Turbosquid artist profile
+            </td>
+            <td>
+                <img class="bigIcon" src="images/icons/turbosquid.png">
+            </td>
+        </tr>
+    </table>
+</div>
+<div class="steamContainer">
+    <table class="freelanceTable">
+     <tr>
+        <td>
+        <div class="steamIcon">
+            <img class="steamPic" id="colt" src="images/colt.jpg">
+        </div>
+        </td>
+        <td>
+        <div class="steamIcon">
+            <img class="steamPic" id="m4a1" src="images/m4a1.jpg">
+        </div>
+        </td>
+    </tr>
+
+     <tr>
+        <td>
+            Colt m1911
+        </td>
+        <td>
+            M4A1
+        </td>
+    </tr>
+</table>
+</div>
+</div>
 
 
-
-     <div class="center">
-        <div class="container grey">
-            <img class="icon" src="/images/icons/music 1.png">
+     <div class="center" id="music">
+        <div class="header container grey">
+            <img class="icon" src="images/icons/music 1.png">
             Music
         </div>
      </div>
+<div id="musicAccordion" class="accordion" data-open=true>
       <div class="darkContainer">
         <div class="info">The following embedded players are songs I have created in the Digital Audio Workstation <i>Propellerhead Reason 7</i>, and uploaded to Soundcloud</div>
     </div>
@@ -258,30 +291,32 @@
         </div>
         -->
     </div>
-
+</div>
 
 
     <div class="footer">
         <div class="footerButton" id="return">
-            <img class="icon" src="/images/icons/home 1.png">
+            <img class="icon" src="images/icons/home 1.png">
             <p>Return to Top</p>
         </div>
-        <div class="footerButton">
-            <img class="icon" src="/images/icons/command.png">
+        <div class="footerButton" id="returnProjects">
+            <img class="icon" src="images/icons/command.png">
             <p>Projects</p>
         </div>
-        <div class="footerButton">
-            <img class="icon" src="/images/icons/pic 3.png">
+        <div class="footerButton" id="returnArt">
+            <img class="icon" src="images/icons/pic 3.png">
             <p>Art</p>
         </div>
-         <div class="footerButton">
-            <img class="icon" src="/images/icons/users.png">
+         <div class="footerButton" id="returnFreelancing">
+            <img class="icon" src="images/icons/users.png">
             <p>Freelancing</p>
         </div>
-        <div class="footerButton">
-            <img class="icon" src="/images/icons/music 1.png">
+        <div class="footerButton" id="returnMusic">
+            <img class="icon" src="images/icons/music 1.png">
             <p>Music</p>
         </div>
+        <br>
+        Copyright © 2015 Nikita Filatov
     </div>
 
 
@@ -299,6 +334,7 @@
         <!-- build:js scripts/vendor.js -->
         <!-- bower:js -->
         <script src="../bower_components/jquery/dist/jquery.js"></script>
+        <script src="scripts/galleria-1.4.2.js"></script>
         <!-- endbower -->
         <!-- endbuild -->
 
@@ -315,7 +351,6 @@
         </script>
 
         <!-- build:js({app,.tmp}) scripts/main.js -->
-        <script src="scripts/galleria-1.4.2.js"></script>
         <script src="scripts/main.js"></script>
 
         <!-- endbuild -->
