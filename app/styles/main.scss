@@ -9,49 +9,198 @@ $borderColor : rgba(255,255,255, .25);
 $break-small: 320px;
 $break-large: 1200px;
 
+$bgimage : "../images/black_lozenge.png";
+$lightImage : "../images/brushed_alu.png";
+$altLightImage : "../images/wavecut.png";
+$greyImage : "../images/little_pluses.png";
+$darkImage : "../images/dark_stripes.png";
+
+$lightImage : $altLightImage;
+
 html{
 	font-family: 'Julius Sans One', sans-serif;
 	cursor : default;
 	user-select: none;
+	min-width: 320px;
+}
+
+body{
+	background-image: url($bgimage);
+	width : 100%;
+	height: 100%;
+}
+
+img{
+	//box-shadow: 0px 0px 3px 3px #999999;
+}
+
+table{
+	margin: 0 auto;
+}
+
+table,tr,td{
+	vertical-align: middle;
+}
+
+td{
+	padding: 7px;
+
+}
+
+.freelanceRow{
+	width: 100%;
+	text-align: center;
+}
+
+.freelanceRow:hover{
+	background-color: rgba(0,0,0,.1);
+}
+
+.steamIcon{
+	width: 250px;
+	border-radius: 10px;
+	border: 2px solid black;
+}
+
+.rowLink{
+	transition: .3s all;
+
+}
+
+.rowLink:hover{
+	background-color: rgba(0,0,0,.1);
+}
+
+.centerColumn{
+	margin: 0 auto;
+	width: 320px;
+
+
+  @media screen and (min-width: 600px) {
+    width: 600px;
+  }
+  
+}
+
+
+
+.galleria{ 
+	width: 100%; height: 200px;
+	@media screen and (min-width: 600px) {
+		height: 400px;
+	}
+}
+
+.icon{
+	width : 30px;
+	float : left;
+	margin-right: 10px;
+}
+
+.bigIcon{
+	width : 60px;
+}
+
+.title{
+	margin-top: 2px;
+	float:left;
 }
 
 .player{
 	margin: 0 auto;
-	width: 600px;
-	margin-bottom: 4px;
+	width: 100%;
+	//border-top: 2px solid #444444;
 }
 
 .header{
-	font-size: 30px;
+	padding-top: 10px;
+	font-size: 42px;
 	font-weight: bold;
 	color: #e3e3e3;
+
+}
+
+.info{
+	margin : 0 auto;
+	width: 90%;
+	font-size: 18px;
+	font-weight: bold;
+	color: rgb(150,150,150);
+	padding: 7px;
+	margin-bottom: 7px;
+}
+
+.container{
+
+	border-radius: 3px;
+	padding: 10px;
+	border-top: 2px solid #999999;
+	border-bottom: 2px solid #222222;
+	margin-bottom: 10px;
 	margin-top: 10px;
 }
 
-body{
-	background-image: url("../images/black_lozenge.png");
-	width : 100%;
-	height: 100%;
-	position: absolute;
-	overflow: hidden;
+.light {
+		box-shadow:
+		inset 0px -10px 10px -10px rgba(0,0,0,.6);
+	background-image: url($lightImage);
 }
 
-.galleria{ width: 600px; height: 400px;}
+.grey{
+		box-shadow:
+		inset 0px 10px 10px -10px rgba(255,255,255,.6);
+	background-image: url($greyImage);
+}
+
+.darkContainer{
+	border-radius: 3px;
+	background-image: url($darkImage);
+	padding: 20px;
+	color: rgb(60,60,60);
+	p{
+		padding-top: 5px;
+		font-size: 20px;
+	}
+		box-shadow:
+		inset 0px 10px 10px -10px rgba(0,0,0,1);
+}
+
+.footer{
+	background-image: url($darkImage);
+	padding: 20px;
+	margin-top: 10px;
+	color: rgb(75,75,75);
+	p{
+		padding-top: 5px;
+		font-size: 20px;
+	}
+		box-shadow:
+		inset 0px 10px 10px -10px rgba(0,0,0,1);
+}
 
 .center{
-	margin: 0 auto;
-	width: 600px;
-	margin-bottom: 10px;
 	font-size: 24px;
 	font-weight: bold;
 	color: #222222;
 }
 
-.box{
-	background-image: url("../images/smooth_wall.png");
-	//background-color: #e2e2e2;
-	border-radius: 5px;
-	padding: 10px;
-	border-top: 2px solid white;
-	border-bottom: 2px solid black;
+.content{
+	font-size: 18px;
+	font-weight: bold;
+	color: #222222;
+	p{
+		font-size: 14px;
+	}
+
+
 }
+
+.footerButton{
+	padding: 7px;
+	width: auto;
+	transition: .3s all;
+}
+.footerButton:hover{
+	background-color: rgba(255,255,255,.03);
+}
+
