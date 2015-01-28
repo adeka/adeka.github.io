@@ -9,10 +9,11 @@ Galleria.ready(function(options) {
 	var g = this;
     // this = the gallery instance
     // options = the gallery options
-	$( ".galleria-image" ).click(function() {
+	$( ".fscreen" ).click(function() {
 		g.openLightbox();
 		//console.log("Asdf");
 	});
+
 });
 //about me
 $( "#resume" ).click(function() {

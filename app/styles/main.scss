@@ -48,6 +48,8 @@ td{
 
 }
 
+
+
 .accordion{
 	/* Initially we don't want any height, and we want the contents to be hidden */
 	max-height: 0;
@@ -180,6 +182,36 @@ td{
 	height: 550px;
   };
 
+}
+
+.fscreen{
+	width: 30px;
+	height: 20px;
+	border: 5px solid rgba(255,255,255,.3);
+	z-index: 10000;
+	position: absolute;
+	margin-top: 140px;
+	margin-left: 260px;
+
+  @media screen and (min-width: 400px) {
+	margin-top: 190px;
+		margin-left: 340px;
+  };
+
+  @media screen and (min-width: 600px) {
+	margin-top: 300px;
+		margin-left: 540px;
+  };
+  
+  @media screen and (min-width: 900px) {
+	margin-top: 450px;
+	margin-left: 740px;
+  };
+
+	transition: .3s border;
+}
+.fscreen:hover{
+	border: 5px solid rgba(255,255,255,.6);
 }
 
 .icon{
