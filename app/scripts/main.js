@@ -126,10 +126,17 @@ $( "#aboutme" ).click(function() {
 	toggleAccordion(this, "#aboutAccordion", "300px")
 });
 $( "#projects" ).click(function() {
-	toggleAccordion(this, "#projectsAccordion", "1000px")
+	toggleAccordion(this, "#projectsAccordion", "1100px")
 });
 $( "#art" ).click(function() {
-	toggleAccordion(this, "#galleryAccordion", "600px")
+	var open = $(this).data("open");
+	if(!open){
+		$(".fscreen").hide();
+	}
+	else{
+		$(".fscreen").show();
+	}
+	toggleAccordion(this, "#galleryAccordion", "700px")
 });
 $( "#freelancing" ).click(function() {
 	toggleAccordion(this, "#steamAccordion", "800px")
