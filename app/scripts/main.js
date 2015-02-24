@@ -27,6 +27,9 @@ $( "#github" ).click(function() {
 	window.open("https://github.com/adeka");
 });
 //projects
+$( "#dude" ).click(function() {
+	window.open("http://adeka.github.io/dude");
+});
 $( "#rogue" ).click(function() {
 	window.open("http://newgramps.itch.io/rogue-infinity");
 });
